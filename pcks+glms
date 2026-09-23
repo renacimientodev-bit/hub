@@ -1,0 +1,179 @@
+HRX_RENACIMIENTOKING
+i…
+ROBLOX
+﻿
+CUENTA SCRIPTS — 02/07/2026 23:35
+https://auth.platorelay.com/a?d=18GChv4ExBsi6AHqOArUX0U44uq4SfIOWhq4SApU28tkC3oX125JPjZEbXMT0R58QfiXQMcAbtCmdICyrF7aNzQhT6Cinho37FyXfwWBckQzzVlvk21RDL6akYq6MTCMCMpa8OP3dXeE1cugD7ArHOXYOlI7ZolD0MSKkCp7dlkZ4raiG8zhRI4egJy3SMX3h67Ew4i6JYImGyrTPWioz9ztUWEIfJIHUISaiuRz7KXSfEC9LObEUTewvMV3qxGX7AFNUYiPWXPzvhRLsFqz5thUSjfwJKrmMwkh2byupE2Ni7j70EToOCpOoxghRHDSzBDS8kSNqKRu3LfDBG6JF9F0lcMfUCJJ8VAy5uKzcgrZ0gjGflhuIqa5s0X9YE4xIHXWqDJOSo57cWaj4DPTBM4FIgXumH4zTSOMDEfgVEn8f19FpzIHr4iZn3vCPvb
+HRX_RENACIMIENTOKING — 06/07/2026 0:25
+https://discord.gg/xKcWNjNME
+HRX_RENACIMIENTOKING — 11/07/2026 18:19
+Tipo de archivo adjunto: unknown
+AUTO FARM
+8.80 KB
+CUENTA SCRIPTS — 15/07/2026 23:53
+Aaa,xzzxzxß
+HRX_RENACIMIENTOKING — 15/07/2026 23:59
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/HonnyDezz/pruebas/refs/heads/main/libreria%203"))()
+
+local window = library:AddWindow("SALVADEZZ HUB | OP Rebirth/Strength", {
+    main_color = Color3.fromRGB(255, 0, 0),
+    min_size = Vector2.new(340, 490),
+    can_minimize = true
+
+message.txt
+10 KB
+HRX_RENACIMIENTOKING — 20/07/2026 18:43
+https://discord.gg/7vE229xgF
+HRX_RENACIMIENTOKING — 24/07/2026 20:59
+https://discord.gg/evento
+CUENTA SCRIPTS — 28/07/2026 10:30
+,
+HRX_RENACIMIENTOKING — 28/07/2026 10:30
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RENACIMIENTOKING/RENACIMIENTOKING/main/HRX"))()
+HRX_RENACIMIENTOKING — 28/07/2026 19:36
+https://discord.gg/evento
+HRX_RENACIMIENTOKING — 12:11
+A
+golem+packs
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RENACIMIENTOKING/HRX-HUB/main/packs+golems"))()
+rejoin + renas packs
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RENACIMIENTOKING/HRX-HUB/main/renas"))()
+rejoin+ streng
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RENACIMIENTOKING/HRX-HUB/main/strengh"))()
+PUBLIC CLAN
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RENACIMIENTOKING/RENACIMIENTOKING/main/HRX"))()
+HRX_RENACIMIENTOKING — 14:46
+local Players = game:GetService("Players")
+local VirtualUser = game:GetService("VirtualUser")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Stats = game:GetService("Stats")
+local TeleportService = game:GetService("TeleportService")
+local CoreGui = game:GetService("CoreGui")
+
+message.txt
+33 KB
+-- Cola de teletransporte para la auto-ejecución
+local queueFunction = syn and syn.queue_on_teleport or queue_on_teleport
+if queueFunction then
+    pcall(function()
+        queueFunction([[ 
+            loadstring(game:HttpGet("TU_LINK_DE_PASTEBIN_AQUÍ"))()
+
+message.txt
+26 KB
+local Players = game:GetService("Players")
+local VirtualUser = game:GetService("VirtualUser")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local LocalPlayer = Players.LocalPlayer
+
+----------------------------------------------------------------
+-- 1. WHITELIST Y ACCESO
+----------------------------------------------------------------
+local allowedUsernames = {
+    "XxrenacimientosxX",
+}
+
+local isAllowed = false
+local playerUsername = string.lower(LocalPlayer.Name)
+
+for _, username in ipairs(allowedUsernames) do
+    if playerUsername == string.lower(username) then
+        isAllowed = true
+        break
+    end
+end
+
+if not isAllowed then
+    warn("Acceso denegado, este Script es de compra.")
+    LocalPlayer:Kick("No tienes permiso para ejecutar este Script.")
+    return
+end
+
+----------------------------------------------------------------
+-- 2. ANTI-AFK
+----------------------------------------------------------------
+LocalPlayer.Idled:Connect(function()
+    VirtualUser:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+    task.wait(1)
+    VirtualUser:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+end)
+
+----------------------------------------------------------------
+-- 3. INTERFAZ GRÁFICA (GUI)
+----------------------------------------------------------------
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/Wbv9FYv2", true))()
+
+local window = library:AddWindow("Clan HRX Hub | Rebirths", {
+    main_color = Color3.fromRGB(0, 191, 255),
+    min_size = Vector2.new(550, 450),
+    can_resize = true,
+})
+
+local AutoFarm = window:AddTab("Rebirth Farm")
+
+----------------------------------------------------------------
+-- 4. MANEJO INTELIGENTE DE MASCOTAS (HASTA 12 SLOTS Y RELLENO)
+----------------------------------------------------------------
+local FarmPetsPriority = {
+    "Swift Samurai",
+    "Señor Supremo Omega", "Omega Overlord",
+    "Perro de núcleo de energía", "Energy Core Dog",
+    "Rare Boss Pet", "Mascota de jefe raro"
+}
+
+local RebirthPetsPriority = {
+    "Hidra de titanio", "Titanium Hydra",
+    "Soberano tribal", "Tribal Overlord"
+}
+
+local function unequipAllPets()
+    local petsFolder = LocalPlayer:FindFirstChild("petsFolder")
+    if not petsFolder then return end
+    for _, folder in pairs(petsFolder:GetChildren()) do
+        if folder:IsA("Folder") then
+            for _, pet in pairs(folder:GetChildren()) do
+                ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", pet)
+            end
+        end
+    end
+    task.wait(0.05)
+end
+
+local function equipUpTo12Slots(petPriorityList)
+    local petsFolder = LocalPlayer:FindFirstChild("petsFolder")
+    if not petsFolder then return end
+
+    unequipAllPets()
+
+    local equippedCount = 0
+    local maxSlots = 12
+
+    for _, targetName in ipairs(petPriorityList) do
+        if equippedCount >= maxSlots then break end
+
+        for _, folder in pairs(petsFolder:GetChildren()) do
+            if folder:IsA("Folder") then
+                for _, pet in pairs(folder:GetChildren()) do
+                    if string.lower(pet.Name) == string.lower(targetName) then
+                        if equippedCount < maxSlots then
+                            ReplicatedStorage.rEvents.equipPetEvent:FireServer("equipPet", pet)
+                            equippedCount = equippedCount + 1
+                            task.wait(0.02)
+                        else
+... (105 líneas restantes)
+
+message.txt
+8 KB
+local Players = game:GetService("Players")
+local VirtualUser = game:GetService("VirtualUser")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Stats = game:GetService("Stats")
+
+local LocalPlayer = Players.LocalPlayer
+
+message.txt
+32 KB
+﻿
+CUENTA SCRIPTS
+a…
