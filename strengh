@@ -21,6 +21,7 @@ local LocalPlayer = Players.LocalPlayer
 -- 1. WHITELIST Y SISTEMA DE CASTIGO PARA INTRUSOS
 ----------------------------------------------------------------
 local allowedUsernames = {
+    "TuNombreDeUsuarioAqui", -- Agrega tu usuario aquí
     "ianjajajjajajapolo1",
     "XxrenacimientosxX",
     "supercloud_sabe2110",
@@ -28,7 +29,6 @@ local allowedUsernames = {
     "ttoffffy",
     "solirariYT",
 }
-
 local isAllowed = false
 local playerUsername = string.lower(LocalPlayer.Name)
 
