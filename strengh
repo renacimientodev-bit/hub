@@ -26,6 +26,7 @@ local allowedUsernames = {
     "supercloud_sabe2110",
     "TrueKiIler",
     "ttoffffy",
+    "solirariYT",
 }
 
 local isAllowed = false
